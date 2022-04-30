@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Aplicacion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+
+        input[type=number]::-webkit-outer-spin-button,
+        
+        input[type=number]::-webkit-inner-spin-button {
+        
+            -webkit-appearance: none;
+        
+            margin: 0;
+        
+        }
+        
+         
+        
+        input[type=number] {
+        
+            -moz-appearance:textfield;
+        
+        }
+        
+        </style>
+    <title>Aplicacion</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="navegation">
+                <img src="img/logo.svg" alt="" class="logo">
+                <nav class="links">
+                    <ul class="gris"><a href="index.html" class="second">Inicio</a></ul>
+                    <ul><a href="Acercade.html" class="second">Acerca De </a></ul>
+                    <div class="reactangulo">
+                        <ul><a href="Aplicacion.html" class="inicio">Aplicacion</a></ul> 
+                    </div>
+                   </nav>
+            </div>
+       
+        </header>
+        <main>
+            <h1 class="titulo">NOMINA</h1>
+            <h2 class="titulo2">SALARIO MENSUAL REY</h2>
+            <input type="number" name="" id="salario" class="salario">
+            <button class="btncalcular" onclick= "calcular()" >Calcular</button>
+            <script src="app.js"></script>
+
+            <div class="contedorresultados">
+                <p>SALARIO BRUTO</p>
+                <div class="resultado">
+                    <p class="cordoba">C$</p>
+                    <p class="numero" id="resultado_bruto">000000.00</p>
+                </div>
+                <p>LO QUE TE PELA EL INNS</p>
+                <div class="resultado">
+                    <p class="cordoba">C$</p>
+                    <p class="numero" id="resultado_INSS">000000.00</p>
+                </div>
+                <p>SALARIO DESPUES DE LO QUE TE QUITAMOS XD </p>
+                <div class="resultado">
+                    <p class="cordoba">C$</p>
+                    <p class="numero" id="salario_neto">000000.00</p>
+                </div>
+                <p>LA RENTA REY (IR)</p>
+                <div class="resultado">
+                    <p class="cordoba">C$</p>
+                    <p class="numero" id="resultado_IR">000000.00</p>
+                </div>
+                <p>TU SALARIO DESPUES DE DEDUCCIONES</p>
+                <div class="resultado">
+                    <p class="cordoba">C$</p>
+                    <p class="numero" id="resultado_deduccioens">000000.00</p>
+                </div>
+
+
+
+            </div>
+        </main>
+        <footer>
+            <div class="fot">
+                <img src="/img/logo.svg" alt="" class="aguito">
+                <p class="loremfother">EDITADO BY MERUEM XD</p>
+                
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
